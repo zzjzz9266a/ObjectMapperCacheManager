@@ -58,7 +58,7 @@
 		B413B4B52189AA9400BB1DE6 = {
 			isa = PBXGroup;
 			children = (
-				B413B4C12189AA9400BB1DE6 /* Source */,
+				B413B4C12189AA9400BB1DE6 /* Sources */,
 				B413B4CC2189AA9400BB1DE6 /* ObjectMapperCacheManagerTests */,
 				B413B4C02189AA9400BB1DE6 /* Products */,
 				B413B4DA2189ABEC00BB1DE6 /* Frameworks */,
@@ -74,14 +74,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B413B4C12189AA9400BB1DE6 /* Source */ = {
+		B413B4C12189AA9400BB1DE6 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				B413B4C22189AA9400BB1DE6 /* ObjectMapperCacheManager.h */,
 				B413B4DD2189ABFA00BB1DE6 /* CacheManager.swift */,
 				B413B4C32189AA9400BB1DE6 /* Info.plist */,
 			);
-			path = Source;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		B413B4CC2189AA9400BB1DE6 /* ObjectMapperCacheManagerTests */ = {
@@ -210,7 +210,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		B413B4D92189ABA500BB1DE6 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			files = (
 			);
 			inputFileListPaths = (
@@ -410,7 +410,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = ObjectMapperCacheManager/Info.plist;
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -440,7 +440,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = ObjectMapperCacheManager/Info.plist;
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -9,7 +9,7 @@
 import Foundation
 import ObjectMapper
 
-class CacheManager {
+open class CacheManager {
     
     //path for cache file
     static private func filePath(_ fileName:String) -> URL?{
