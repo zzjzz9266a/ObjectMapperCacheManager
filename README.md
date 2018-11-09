@@ -1,4 +1,8 @@
 # ObjectMapperCacheManager
+![Swift v4.0](https://img.shields.io/badge/Swift-4.0-orange.svg?style=flat)
+![Pod v2.7](https://img.shields.io/badge/Pod-v2.7-blue.svg?style=flat)
+![platform 4.0](https://img.shields.io/badge/Platform-iOS-4BC51D.svg?style=flat)
+
 A Light-Weight Tool For Cache Of [ObjectMapper](https://github.com/tristanhimmelman/ObjectMapper)
 
 # Installation
