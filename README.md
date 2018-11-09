@@ -1,17 +1,21 @@
-# ObjectMapperCacheManager
-![Swift v4.0](https://img.shields.io/badge/Swift-4.0-orange.svg?style=flat)
-![Pod v2.7](https://img.shields.io/badge/Pod-v2.7-blue.svg?style=flat)
-![platform 4.0](https://img.shields.io/badge/Platform-iOS-4BC51D.svg?style=flat)
+<p align="center">
+    <a href="https://github.com/zzjzz9266a/ObjectMapperCacheManager"><img src="https://github.com/zzjzz9266a/ObjectMapperCacheManager/blob/master/logo.png"></a>
+</p>
+<p align="center">
+  <img src="https://img.shields.io/badge/Swift-4.0-orange.svg?style=flat">
+  <img src="https://img.shields.io/badge/Pod-v2.7-blue.svg?style=flat">
+  <img src="https://img.shields.io/badge/Platform-iOS-4BC51D.svg?style=flat">
+</p>
+<!--<p align="center">A Light-Weight Tool For Cache, based on <a href="https://github.com/tristanhimmelman/ObjectMapper">ObjectMapper</a></p>-->
 
-A Light-Weight Tool For Cache Of [ObjectMapper](https://github.com/tristanhimmelman/ObjectMapper)
 
-# Installation
-## Cocoapods
+## Installation
+### Cocoapods
 ```
 pod 'ObjectMapperCacheManager'
 ```
 
-# Usage
+## Usage
 When store something to a device, "key" is the only identifier, just like `UserDefaults` in `Foundation`.
 
 ``` swift
@@ -21,7 +25,7 @@ But, the difference between `UserDefaults` and `CacheManager` is the directory i
 >`UserDefaults`: Home/Library/Preference/  
 >`CacheManager`: Home/Library/Caches
 
-## 1.Store key-value data
+### 1. Store key-value data
 The data could be a dict or an array
 
 ``` swift
@@ -32,7 +36,7 @@ let dictArray = [[String: Any]] = [dict]
 CacheManager.setCache(json: dictArray, for: "JsonArray")
 ```
 
-## 2.Get cached key-value data
+### 2. Get cached key-value data
 ``` swift
 // must declare the type
 if let dict: [String: Any] = CacheManager.cacheJson(for: "Json") as? [String: Any]{  
@@ -44,7 +48,7 @@ if let array: [[String: Any]] = CacheManager.cacheJson(for: "JsonArray") as? [St
 }
 ```
 
-## 3.Store an object or an array of ObjectMapper
+### 3. Store an object or an array of ObjectMapper
 The only requirement is that the object must conform to ObjectMapper's `Mappable` protocol.
 
 ``` swift
@@ -54,7 +58,7 @@ CacheManager.setCache(object: user, for: "Object")
 let userList = [user]
 CacheManager.setCache(array: userList, for: "ObjectArray")
 ```
-## 4.Get cached object of array
+### 4. Get cached object of array
 
 ``` swift
 if let user: User = CacheManager.cache(for: "Object") {
@@ -65,5 +69,5 @@ if let array: [User] = CacheManager.cacheArray(for: "ObjectArray") {
 
 ```
 
-# License
+## License
 `ObjectMapperCacheManager` is released under an MIT license. See LICENSE for more information.

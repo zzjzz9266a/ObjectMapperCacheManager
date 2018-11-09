@@ -33,8 +33,6 @@ class ViewController: UITableViewController {
     func objectGet() {
         if let object: User = CacheManager.cache(for: "Object") {
             DetailViewController.showDetail(text: object.toJSONString(prettyPrint: true), from: self)
-//            alert(text: object.toJSONString())
-//            print(object)
         }
     }
     
@@ -43,7 +41,6 @@ class ViewController: UITableViewController {
             if let user = Mapper<User>().map(JSONObject: dict){
                 DetailViewController.showDetail(text: user.toJSONString(prettyPrint: true), from: self)
             }
-//            DetailViewController.showDetail(text: dict.description, from: self)
         }
     }
     
