@@ -8,6 +8,7 @@
 </p>
 <!--<p align="center">A Light-Weight Tool For Cache, based on <a href="https://github.com/tristanhimmelman/ObjectMapper">ObjectMapper</a></p>-->
 
+[中文简介](https://github.com/zzjzz9266a/ObjectMapperCacheManager/blob/master/README_CN.md)
 
 ## Installation
 ### Cocoapods
@@ -22,8 +23,9 @@ When store something to a device, "key" is the only identifier, just like `UserD
 UserDefaults.standard.setValue(["name": "James", "age": 16], forKey: "User")
 ```
 But, the difference between `UserDefaults` and `CacheManager` is the directory in sandbox:
->`UserDefaults`: Home/Library/Preference/  
->`CacheManager`: Home/Library/Caches
+* `UserDefaults`: Home/Library/Preference/  
+
+* `CacheManager`: Home/Library/Caches
 
 ### 1. Store key-value data
 The data could be a dict or an array
@@ -62,9 +64,11 @@ CacheManager.setCache(array: userList, for: "ObjectArray")
 
 ``` swift
 if let user: User = CacheManager.cache(for: "Object") {
+    //use data
 }
 
 if let array: [User] = CacheManager.cacheArray(for: "ObjectArray") {
+    //use data
 }
 
 ```
